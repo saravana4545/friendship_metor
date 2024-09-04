@@ -3,9 +3,9 @@ import random
 
 app = Flask(__name__)
 
-@app.route('/',methods=['POST','GET'])
+@app.route('/', methods=['POST','GET'])
 def home():
-    if request.method in ['POST','GET']:
+    if request.method == 'POST':
         name1 = request.form.get('name1')
         name2 = request.form.get('name2')
         
