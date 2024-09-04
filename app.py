@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/',methods=['POST','GET'])
 def home():
-    if request.method == ['POST','GET']:
+    if request.method in ['POST','GET']:
         name1 = request.form.get('name1')
         name2 = request.form.get('name2')
         
